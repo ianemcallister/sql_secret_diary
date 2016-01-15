@@ -1,0 +1,5 @@
+#ignore the dbconfig file
+config.php
+
+#ignore boostrap
+css/bootstrap.min.css
