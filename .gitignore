@@ -1,9 +1,9 @@
 #ignore the dbconfig file
-config.php
+php/config.php
 
 #ignore boostrap
 css/bootstrap.min.css
 js/bootstrap.min.js
 
 #background image
-#background.jpg
+img/background.jpg
