@@ -1,4 +1,8 @@
-<?php include("login.php"); ?>
+<?php 
+//echo "I have a color car.";
+error_reporting(0);
+include 'php/login.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +67,7 @@
  					}
 
  					if($message) {
- 						echo '<div class="alert alert-sucess">'.addslashes($message).'</div>';
+ 						echo '<div class="alert alert-success">'.addslashes($message).'</div>';
  					}
 
  				?>
@@ -85,30 +89,17 @@
  		</div>
  	</div>
 
- 	<!--
-	<form method="post">
-		<input type="email" name="email" class="form-control" placeholder="Your Email" value="<? echo addslashes($_POST['email']); ?>" />
-		<input type="password" name="password" class="form-control" placeholder="Password" value="<? echo addslashes($_POST['password']); ?>" />
-		<input type="submit" name="submit" value="Sign Up" class="btn btn-success btn-lg marginTop"/> 
-	</form>
-
-
-	<form method="post">
-		<input type="email" name="loginemail" placeholder="Email" class="form-control" value="<?php echo addslashes($_POST['loginemail']); ?>" />
-		<input type="password" name="loginpassword" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['loginpassword']); ?>" />
-		<input type="submit" name= "submit" class="btn btn-success" value="Log In">
-	</form>
-	-->
-
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Run custome script for container height -->
     <script>
     	$(".contentContainer").css("min-height",$(window).height());
     </script>
+
 </body>
 </html>
 
